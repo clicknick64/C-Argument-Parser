@@ -13,7 +13,7 @@ int arrayIndex(char *element, char **array, int n){
 char** argParse(int argc, char **argv, int n, char **names){
     // Invalid number of arguments
     if (argc-1 != n*2){
-        printf("Error: Wrong number of arguments passed in argParse.\n");
+        printf("Error: Wrong number of arguments passed in argParse!\n");
         return NULL;
     }
 
@@ -30,7 +30,7 @@ char** argParse(int argc, char **argv, int n, char **names){
     // Invalid syntax
     if (counter != n){
         free(arguments);
-        printf("Error: Not all arguments were filled.\n");
+        printf("Error: Not all arguments were filled!\n");
         return NULL;
     }
 
